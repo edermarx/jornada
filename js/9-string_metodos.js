@@ -2,6 +2,9 @@ const a = 'Frase aleatória';
 
 console.log(a.length); // 15
 
+console.log(a[3]); // s
+console.log(a[a.length - 1]); // a
+
 console.log(a.indexOf('F')); // 0
 console.log(a.indexOf('a')); // 2
 console.log(a.indexOf('e a')); // 4

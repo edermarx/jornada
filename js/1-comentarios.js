@@ -1,8 +1,11 @@
 // Isso é um comentário de linha única.
 
 /*
-Isso é um comentário
+
+Isso é um
+comentário
 com várias linhas.
+
 */
 
 /**

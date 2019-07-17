@@ -15,7 +15,7 @@ console.log(3 / 'a'); // NaN
 // =============== Tipagem dinâmica =============== //
 
 let a = 3;
-console.log(typeof a); //number
+console.log(typeof a); // number
 
 a = 'yay';
 console.log(typeof a); // string
