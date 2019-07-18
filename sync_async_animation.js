@@ -1,4 +1,4 @@
-const a = '▄';
+const a = '■';
 
 if(!process.argv[2]){
   console.log('Arguments: mode, wall, gap, requestsNum, speed');
@@ -33,7 +33,8 @@ const draw = (i) => {
 
 const start = new Date().getTime();
 setInterval(() => {
-  if(config[mode].i >= wall * 2){
+  const stopCondition = mode === 'sync' ? config[mode].gap -1 : 0;
+  if(config[mode].i + stopCondition >= wall * 2){
     console.log(`Time elapsed: ${new Date().getTime() - start}ms`);
     process.exit();
   }
