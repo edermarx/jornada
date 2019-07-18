@@ -4,8 +4,8 @@ const a = {
   d: [1, 3],
   e: {
     f: 2
-  }
-}
+  },
+};
 
 console.log(a.b); // 3
 console.log(a.d[1]); // 3
@@ -21,6 +21,8 @@ Object.values(a).forEach((value) => {
   console.log(value); // 3, yay, [ 1, 3 ], { f: 2 }
 });
 
+console.log(Object.entries(a)); // [ [ 'b', 3 ], [ 'c', 'yay' ], [ 'd', [ 1, 3 ] ], [ 'e', { f: 2 } ] ]
+
 for(key in a){
- console.log(`${key}: ${JSON.stringify(a[key])}`);
+ console.log(`${key}: ${JSON.stringify(a[key])}`); // b: 3, c : 'yay', d: [1,3], e: {f: 2}
 }

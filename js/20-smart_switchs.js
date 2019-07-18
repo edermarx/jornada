@@ -1,5 +1,5 @@
 const numeros = [1, 2, 3, 4, 5];
-const num_strings = ['um', 'dois', 'três', 'quatro', 'quinta'];
+const num_strings = ['um', 'dois', 'três', 'quatro', 'cinco'];
 
 const a = 2;
 const a_string = num_strings[numeros.indexOf(a)];

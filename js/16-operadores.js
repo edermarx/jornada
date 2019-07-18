@@ -25,7 +25,6 @@ console.log(3 >= 3); // true
 console.log(3 == 3); // true
 console.log(true == 1); // true
 console.log(true == 2); // false
-console.log([] == 1); // false
 console.log(false == ''); // true
 console.log(false == []); // true
 console.log(35 == '35'); // true
@@ -43,3 +42,10 @@ console.log([3] === '3'); // false
 console.log(3 === 3); // true
 console.log('s' === 's'); // true
 console.log([2] === [2]); // false
+
+// Operador de Negação
+console.log(!3 == 3); // false
+console.log(true != !1); // true
+console.log(true !== !2); // true
+console.log(!![] == 1); // true
+console.log(35 == !'35'.length); // false

@@ -23,6 +23,11 @@ console.log(a); // 7
 a--;
 console.log(a); // 6
 
+// =============== Operador Spread =============== //
+
+console.log(Math.min(5, 1, 3, 7)); // 1
+console.log(Math.min(...[5, 1, 3, 7])); // 1
+
 // =============== Operadores ternários =============== //
 
 
