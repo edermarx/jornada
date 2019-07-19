@@ -29,7 +29,7 @@ function myMin(...numeros) {
   return min;
 }
 
-const myOtherMin = (...numeros) => {
+const myOtherMin = function(...numeros) {
   return numeros.sort((a, b) => {
     return a > b ? 1 : -1;
   })[0];
