@@ -1,11 +1,27 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
+const bodyParser = require('body-parser');
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
+
 const users = ['fejwfklew', 'fejfewwfklew', 'ew'];
 
-app.get('/', (req, res) => {
-  res.send('<h1>yay</h1>');
+app.use('/views', express.static('views'));
+
+app.get('/:username', (req, res) => {
+  res.send(req.params.username);
+  // res.sendFile(path.join(__dirname, './views/index.html'));
+});
+
+app.post('/', (req, res) => {
+  res.send(req.body.test);
 });
 
 app.get('/users', (req, res) => {
